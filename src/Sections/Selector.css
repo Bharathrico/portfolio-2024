@@ -1,11 +1,39 @@
 .Selector
 {
-    background-color: black;
-    /* position: absolute;
-    top: 20px;
-    transform: translate(-50%, 0%); */
-    margin: auto;
+    background-color: #17171A;
     position: absolute;
     left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 40px;
+    width: auto;
+    flex-wrap: wrap;
     transform: translate(-50%, 0%); 
+    padding: 10px;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.pill
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #B0B0B0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #1F1F21;
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: switzer;
+    src: url(../fonts/Switzer-Variable.ttf);
+}
+
+.switzer
+{
+    font-family: switzer;
 }

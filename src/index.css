@@ -7,8 +7,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+html
+{scroll-behavior: smooth;}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #101011;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1D1D1F;
+  border-radius: 10px;
 }
