@@ -2,15 +2,15 @@ import './App.css';
 import Contacts from './Sections/Contacts';
 import Hero from './Sections/Hero';
 import Projects from './Sections/Projects';
-import Stack from './Sections/Stack';
+import Hobbies from './Sections/Hobbies';
 import Selector from './Sections/Selector.js';
 function App() {
   return (
     <div className="App">
     <Selector/>
      <Hero/>
+     <Hobbies/>
      <Projects/>
-     <Stack/>
      <Contacts/> 
     </div>
   );

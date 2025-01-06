@@ -1,32 +1,55 @@
-.Selector
+.selector-wrap
+{
+    top: 0.8rem;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+}
+
+.selector
 {
     background-color: #17171A;
-    position: absolute;
-    left: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 40px;
     width: auto;
-    flex-wrap: wrap;
-    transform: translate(-50%, 0%); 
+    /* flex-wrap: wrap; */
     padding: 10px;
     gap: 10px;
-    border-radius: 30px;
+    border-radius: 3rem;
 }
 
 .pill
 {
+    outline: none;
+    border: none;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 400;
     color: #B0B0B0;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 20px;
-    background-color: #1F1F21;
+    border-radius: 2rem;
+    background-color: #1F1F2100;
     cursor: pointer;
+    transition: background 0.6s ease-out;
 }
+
+.pill:hover
+{
+    background-color: #1F1F21FF;
+    font-weight: 500;
+    transition: font-weight 0.3s ease-out;
+}
+
+.pill:active
+{
+    background-color: #1F1F21FF;
+    font-weight: 500;
+    transition: font-weight 0.3s ease-out;
+}
+
 
 @font-face {
     font-family: switzer;
@@ -36,4 +59,29 @@
 .switzer
 {
     font-family: switzer;
+}
+
+@media only screen and (max-width: 768px) {
+    .selector-wrap
+    {
+        bottom: 1.5rem;
+        top: auto;
+        left: auto;
+        right: 2em;
+        transform: none; 
+    }
+    .selector
+    {
+        
+        flex-wrap: nowrap;
+        flex-direction: column;  
+        width: 10.3rem;
+        border-radius: 2rem;
+    }
+    .pill
+    {
+        /* border-radius: 3rem; */
+        font-size: 1.4rem;
+        width: 10rem;
+    }
 }
