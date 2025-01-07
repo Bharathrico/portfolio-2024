@@ -53,6 +53,7 @@
 .pill-active
 {
     transition: font-weight 0.3s ease-out;
+    transition-delay: 0.3s;
     background-color: #1F1F21FF;
     font-weight: 500;
 }
