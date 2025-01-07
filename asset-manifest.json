@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfooolio/static/css/main.3bca497f.css",
+    "main.js": "/portfooolio/static/js/main.001ab369.js",
+    "static/js/453.5edffd07.chunk.js": "/portfooolio/static/js/453.5edffd07.chunk.js",
+    "static/media/Switzer-Variable.ttf": "/portfooolio/static/media/Switzer-Variable.fa6516b65d6b10e1a3c7.ttf",
+    "index.html": "/portfooolio/index.html",
+    "main.3bca497f.css.map": "/portfooolio/static/css/main.3bca497f.css.map",
+    "main.001ab369.js.map": "/portfooolio/static/js/main.001ab369.js.map",
+    "453.5edffd07.chunk.js.map": "/portfooolio/static/js/453.5edffd07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3bca497f.css",
+    "static/js/main.001ab369.js"
+  ]
+}
