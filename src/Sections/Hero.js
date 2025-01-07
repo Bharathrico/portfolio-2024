@@ -1,9 +1,19 @@
 import './Hero.css'
+import { useInView } from "react-intersection-observer";
 
-function Hero() {
-    return (  <div className="Hero" id='home'>
+const Hero= ({ id, onIntersect}) => {
+    const { ref} = useInView({
+        threshold: 0.3,
+        triggerOnce: false,
+        onChange: (inView) => {
+          if (inView){
+             onIntersect(id);
+        }
+        },
+      });
+    return (  <div id={id} ref={ref} className="Hero">
      
         </div>);
-}
+};
 
 export default Hero;

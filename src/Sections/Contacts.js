@@ -1,9 +1,21 @@
 import './Contacts.css'
+import { useInView } from "react-intersection-observer";
 
-function Contacts() {
-    return (  <div className="Contacts" id='contacts'>
+const Contacts= ({ id, onIntersect}) => {
+    const { ref} = useInView({
+        threshold: 0.3,
+        triggerOnce: false,
+        onChange: (inView) => {
+            
+          if (inView)
+            {
+                 onIntersect(id);
+            }
+        },
+      });
+    return (  <div id={id} ref={ref} className="Contacts">
      
         </div>);
-}
+};
 
 export default Contacts;

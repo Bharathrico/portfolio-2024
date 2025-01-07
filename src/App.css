@@ -3,6 +3,11 @@
   justify-content: center;
   background-color: #1b1b1b;
   text-align: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 

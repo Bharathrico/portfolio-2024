@@ -33,7 +33,7 @@
     border-radius: 2rem;
     background-color: #1F1F2100;
     cursor: pointer;
-    transition: background 0.6s ease-out;
+    transition: background 0.3s ease-out;
 }
 
 .pill:hover
@@ -50,6 +50,12 @@
     transition: font-weight 0.3s ease-out;
 }
 
+.pill-active
+{
+    transition: font-weight 0.3s ease-out;
+    background-color: #1F1F21FF;
+    font-weight: 500;
+}
 
 @font-face {
     font-family: switzer;
@@ -75,13 +81,15 @@
         
         flex-wrap: nowrap;
         flex-direction: column;  
-        width: 10.3rem;
+        /* width: 6rem; */
+        width: auto;
         border-radius: 2rem;
     }
     .pill
     {
         /* border-radius: 3rem; */
-        font-size: 1.4rem;
-        width: 10rem;
+        font-size: 1rem;
+        width: 100%;
     }
 }
+

@@ -1,9 +1,19 @@
 import './Projects.css'
+import { useInView } from "react-intersection-observer";
 
-function Projects() {
-    return (  <div className="Projects" id="projects">
+const Projects= ({ id, onIntersect}) => {
+    const { ref } = useInView({
+        threshold: 0.3,
+        triggerOnce: false,
+        onChange: (inView) => {
+          if (inView) {
+             onIntersect(id);
+        }
+        },
+      });
+    return (  <div id={id} ref={ref} className="Projects">
      
         </div>);
-}
+};
 
 export default Projects;
